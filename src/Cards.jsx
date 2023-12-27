@@ -1,9 +1,8 @@
 import './App.css'
 import GameRules from './GameRules.jsx'
-import increment from './GameRules.jsx'
 import React, { useState, useEffect } from 'react';
 
-const Cards = (props) => {
+const Cards = ({ onCardClick }) => {
   const initialCards = [{
     id: 0,
     name: '6 of hearts',
@@ -47,23 +46,19 @@ function shuffleArray(array) {
   return newArray;
 }
 
-function handleIncrementFromCards() {
+const handleCardClick = (card) => {
   const shuffledCards = shuffleArray(cards);
   setCards(shuffledCards);
- 
-  if (props.onIncrement) {
-    props.onIncrement();
-  }
+  onCardClick(card.id);
+};
 
-  console.log('Shuffled Cards:', shuffledCards);
-}
+
     return (
         cards.map(card =>
-        <div key={card.id}>
+        <div key={card.id} onClick={() => handleCardClick(card)}>
           <img
             src={card.src}
             alt={card.name}
-            onClick={handleIncrementFromCards}
             className="card" />
         </div>
         )  
