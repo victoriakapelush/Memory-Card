@@ -1,11 +1,35 @@
-@import url('https://fonts.cdnfonts.com/css/coop-new');
-
 :root {
   background-color: rgb(169, 162, 162);
-  font-family: 'Coop New', sans-serif;
+  font-family: 'Aclonica';
+  margin: 1rem 1rem;
 }
 
-h2 {
-  text-align: center;
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
+
+.cards-container {
+  justify-content: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header-container {
+  justify-content: space-between;
+}
+
+h2, h3, p {
+  margin: 0 0;
+  padding: .5rem 0;
+}
+
+.header-container > div {
+  margin-bottom: 3rem;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
 
