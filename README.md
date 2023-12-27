@@ -2,6 +2,8 @@
 
 Fun activity that challenges players' cognitive abilities, particularly their memory skills. 
 
+Preview link is [here](https://cheerful-melba-09ba5f.netlify.app).
+
 ## Built with
 <li>Vite + React</li>
 <li>CSS / HTML</li>
