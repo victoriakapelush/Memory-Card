@@ -2,7 +2,7 @@
 
 Fun activity that challenges players' cognitive abilities, particularly their memory skills. 
 
-Preview link is [here](https://cheerful-melba-09ba5f.netlify.app).
+Preview link is [here](https://memory-card-game-by-vk.netlify.app).
 
 ## Built with
 <li>Vite + React</li>
